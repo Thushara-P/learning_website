@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primaryBgColor: #fcf3f3;
+    --primaryRedColor: #e55252;
+    --primaryFontColor: #e55252;
+    --golden-color: #e69419;
+    --blackFont: #1a1a1a;
+    --halfGrey: #4d4d4d;
+    --whiteColor: #ffffff;
+}
+body{
+    background-color: var(--primaryBgColor) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.darktheme
+{
+    --primaryBgColor: #282424 !important; 
+    --blackFont: #e7e3e3!important;
+    --halfGrey: #dfd7d7!important;
+}
+
+.main_btn
+{
+    background-color: var(--primaryRedColor) !important;
+    border: none!important;
+    color: var(--primaryBgColor) !important;
+    padding: 12px 21px 12px 21px !important;
+}
+
+.titleContent p{
+    font-size: 18px;
+    color: var(--primaryFontColor);
+    font-weight: 500 !important;
+    padding-bottom: 4px;
+}
+
+.titleContent h2{
+    color: var(--blackFont);
+    font-weight: 600 !important;
+    padding-bottom: 45px;
+}
+
+
+/* ------------- NavBar Section Starts ------------- */
+.navbar-brand
+{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    color:var(--halfGrey);
+    font-size: 22px !important;
+}
+.logoColor
+{
+   color: var(--primaryFontColor);
+}
+.navbar-nav .nav-link
+{
+    font-size: 14px;    
+}
+.dropdown-toggle
+{
+    color: var(--blackFont) !important;
+}
+.navbar-nav .nav-link:hover
+{
+    color: var(--halfGrey) !important;
+}
+.navbar-nav
+{
+    column-gap: 20px;
+}
+.bottomLine
+{
+    border-top: 1px solid black;
+    margin-top: 0px !important;
+}
+
+.dropdown-toggle::after
+{
+    display: none !important;
+}
+.dropDown-line
+{
+    font-size: 20px !important;
+}
+
+/* ------------- NavBar Section Ends ------------- */
+
+/* ------------- Hero Section Starts ------------- */
+.heroSection_content p
+{
+font-size: 18px;
+color: var(--primaryFontColor);
+font-weight: 500 !important;
+padding-bottom: 4px;
+}
+.heroSection_content h1{
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+.heroSection_content span
+{
+    font-size: 14px;
+    color: var(--halfGrey);
+}
+.heroSection_img
+{
+    width: 100%;
+}
+.herocontent
+{
+    padding-top: 145px;
+    padding-bottom: 135px;
+}
+.counterText span
+{
+    font-size: 13px; 
+    color: var(--halfGrey);
+}
+.counterText h3{
+    font-weight: bold;
+}
+.counterText>h3{
+    color:#4d4d4d;
+}
+.plusIcon
+{
+    font-size: 20px;
+}
+.coursesSection
+{
+    color: #94ebcb;
+}
+.countriesSeection
+{
+    color: #f7a1a1;
+}
+.instructionsSection
+{
+    color: #f7c0a1;
+}
+.automaticCounter
+{
+    margin-bottom: 60px;
+    background-color: #ffffff !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.card
+{
+    --bs-card-border-color: none !important;
+}
+.joinFreeBtn
+{
+    margin-top: 28px;
+    font-weight: 600 !important;
+}
+/* ------------- Hero Section End ------------- */
+
+
+/* ------------- Courses Section start------------- */
+.coursesCards
+{
+    padding-bottom: 51px;
+}
+
+.card{
+    --bs-card-bg: none !important;
+    --bs-card-spacer-x: none !important;
+   
+}
+
+.card-body
+{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.profilePic
+{
+    width: 50px;
+    padding-right: 12px;
+}
+
+.AuthorName
+{
+    color: var(--halfGrey);
+    font-weight: 300;  
+}
+
+.card-title
+{
+    padding-bottom: 12px !important;
+}
+
+.card-img, .card-img-top
+{
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    border-bottom-left-radius: var(--bs-card-inner-border-radius);
+    border-bottom-right-radius: var(--bs-card-inner-border-radius);
+}
+
+.courseImg
+{
+    position:relative;
+}
+
+.img_badge
+{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.badge
+{
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    background-color: var(--primaryRedColor) !important;
+}
+
+/* Star Rating start*/
+.starRating
+{
+    color: var(--golden-color);
+    font-weight: 600;
+}
+.starCount
+{
+    font-size: 15px;
+    color: var(--halfGrey);
+}
+/* Star Rating end*/
+
+.viewCourseBtn
+{
+    font-weight: 500 !important;
+}
+
+/* ------------- Courses Section end------------- */
+
+
+/* ------------- Student Review Section start------------- */
+.feedback
+{
+    padding-top: 125px;
+}
+.circ {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: none;
+    border-top: 1px solid transparent;
+    border-left: 1px solid var(--primaryRedColor);
+    border-right: 1px solid var(--primaryRedColor);
+    border-bottom: 1px solid var(--primaryRedColor);
+    transform: rotate(45deg);
+  }
+.FeedbackSection
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .FeedbackSection p{
+    font-size: 18px;
+    color: var(--primaryFontColor);
+    font-weight: 500 !important;
+    padding-bottom: 4px; 
+}
+.FeedbackSection h2{
+    color: var(--blackFont);
+    font-weight: 600 !important;
+    padding-bottom: 45px;
+}  */
+
+
+/* Carousal */
+#carouselExampleCaptions{
+    width: 100% !important;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.carousalImg
+{
+   width: 100%;
+    padding-bottom: 10px !important;
+    display: flex;
+    justify-content: center;
+}
+.carousalImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+}
+.carousel-caption
+{
+    position: unset !important;
+    width: 600px !important;
+}
+.carousel-caption span{
+    color: var(--halfGrey);
+}
+.carousel-control-next
+{
+    color: var(--primaryRedColor) !important;
+    padding-left: 300px !important;
+}
+
+.carousel-control-prev
+{
+    color: var(--primaryRedColor) !important;  
+    padding-right: 300px !important; 
+}
+.nextBtn
+{
+    font-size: 30px !important;
+    position: absolute !important;
+    bottom: 80px !important;
+    right: 89% !important;
+}
+.prevBtn
+{
+    font-size: 30px !important;
+    position: absolute !important;
+    bottom: 80px !important;
+    left: 89% !important;
+}
+.studentName
+{
+    color: var(--blackFont) !important;
+    font-weight: 600;
+    padding-top: 28px;
+    padding-bottom: 19px;
+}
+.controlBtns
+{
+    width: 200px !important;
+}
+
+/* Carousal */
+
+
+/* ------------- Student Review Section end------------- */
+#studentFeedback {
+    /* background-color: #1abc9c;
+    width: 100%;
+    height: 100vh; */
+    position: relative;
+}
+
+ul#shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+ul#shape li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    /* background-color: rgba(255,255,255,0.4); */
+    bottom: -200px;
+    animation: floating 15s infinite linear;
+
+}
+
+ul#shape li:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    left: 25%;  
+    background-color: #fad2d2;
+    animation-delay: 0.1s;
+}
+
+ul#shape li:nth-child(2) {
+    width: 55px;
+    height: 55px;
+    left: 95%;  
+    background-color: #d2f0e3;
+    animation-delay: 3s;
+}
+
+ul#shape li:nth-child(3) {
+    width: 45px;
+    height: 45px;
+    left: 75%;   
+    background-color: #f1bd93;
+    animation-delay: 2s;
+}
+
+ul#shape li:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 10%; 
+    background-color: #fbe2e2;
+    animation-delay: 0.2s;
+}
+
+ul#shape li:nth-child(5) {
+    width: 20px;
+    height: 20px;
+    left: 60%;
+    background-color: #fbe2e2;
+    animation-delay: 2.5s;
+}
+
+ul#shape li:nth-child(6) {
+    width: 25px;
+    height: 25px;
+    left: 84%;
+    background-color: #d2f0e3;
+    animation-delay: 1s;
+}
+
+ul#shape li:nth-child(7) {
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    background-color: #f1bd93;
+    animation-delay: 4s;
+}
+
+ul#shape li:nth-child(8) {
+    width: 30px;
+    height: 30px;
+    left: 40%;  
+    background-color: #fceed6;
+    animation-delay: 2s;
+}
+
+@keyframes floating {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 80%;
+    }
+
+    to {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 80%;
+    }
+}
+/* ------------- Student Review Section end------------- */
+
+/* ------------- Hero Bg Animation Section start------------- */
+#heroSection {
+    /* background-color: #1abc9c;
+    width: 100%;
+    height: 100vh; */
+    position: relative;
+}
+
+ul#outlineShape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+ul#outlineShape li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    /* background-color: rgba(255,255,255,0.4); */
+    bottom: -200px;
+    animation: floating 15s infinite linear;
+}
+
+ul#outlineShape li:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    left: 25%;  
+    border: 4px solid#a84747;
+    animation-delay: 0s;
+}
+
+ul#outlineShape li:nth-child(2) {
+    width: 55px;
+    height: 55px;
+    left: 95%;  
+    border: 4px solid#73be9e;
+    animation-delay: 3s;
+}
+
+ul#outlineShape li:nth-child(3) {
+    width: 45px;
+    height: 45px;
+    left: 75%;   
+    border: 4px solid#f1bd93;
+    animation-delay: 2s;
+}
+
+ul#outlineShape li:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 10%; 
+    border: 4px solid#fbe2e2;
+    animation-delay: 0.2s;
+}
+
+ul#outlineShape li:nth-child(5) {
+    width: 20px;
+    height: 20px;
+    left: 60%;
+    border: 4px solid#e4a5a5;
+    animation-delay: 2.5s;
+}
+
+ul#outlineShape li:nth-child(6) {
+    width: 25px;
+    height: 25px;
+    left: 84%;
+    border: 4px solid#97e7c5;
+    animation-delay: 1s;
+}
+
+ul#outlineShape li:nth-child(7) {
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    border: 4px solid#f1bd93;
+    animation-delay: 4s;
+}
+
+ul#outlineShape li:nth-child(8) {
+    width: 30px;
+    height: 30px;
+    left: 40%;  
+    border: 4px solid#df9d2d;   
+    animation-delay: 2s;
+}
+
+@keyframes floating {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 80%;
+    }
+
+    to {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 80%;
+    }
+}
+/* ------------- Hero Bg Animation Section end------------- */
+
+
+/* ------------- Become a Instructor Start------------- */
+#BecomeInstructor
+{
+    padding-top: 120px;
+    
+}
+.ApplyNow_btn
+{
+    margin-top: 0px !important;
+}
+.instructorTitle p{
+    font-size: 21px !important;
+}
+.instructorTitle h2
+{
+    padding-bottom: 25px !important;
+    font-size: 3rem !important;
+}
+.instructorTitle
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.InstructorContainer
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--whiteColor) !important;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.InstructorImg
+{
+    width: 70%;  
+}
+.footerDivider
+{
+    margin-top: 61px;
+    background-color: var(--halfGrey);
+    opacity: 0.1 !important;
+    margin-bottom: 55px;
+}
+/* ------------- Become a Instructor End ------------- */
+
+
+
+/* ------------- Footer Section Start ------------- */
+.footerList
+{
+    padding-top: 18px !important;
+}
+
+.footerList ul
+{
+  list-style: none;  
+  padding-left: 0px !important;
+  color: var(--halfGrey) !important;
+  opacity: 0.8;
+}
+
+.footerList ul li{
+    padding-bottom: 10px;
+}
+
+.fa-brands
+{
+    color: var(--blackFont) !important;
+}
+
+    
+/* ------------- Footer Section End ------------- */
+
+
+
+
+
+
+/* --------For Dropdown-------- */
+
+/* @keyframes mymove {
+    from {top: 110px;}
+    to {top: 130px;}
+  }
+
+#parentDiv
+{
+    position: relative;
+    margin-left: 10px;
+}
+
+#childDiv 
+{
+    position:absolute;
+    opacity: 0;
+    top: 130px;
+  
+}
+
+.hidden
+{
+    display: none;
+}
+.show{
+    list-style: none;
+    background-color: #ebc394;
+    padding: 10px;
+    opacity: 1 !important;      
+    animation: mymove 1s;
+    
+} */
+
+
+
+/* ///////// Mobile Media Query //////////*/
+@media only screen and (min-width: 320px) and (max-width: 768px)
+{
+   .herocontent
+   {
+    padding-top: 30px;
+   }
+   .joinFreeBtn
+   {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+   }
+   .carousel-caption
+   {
+    width: 370px !important;
+   }
+   #FooterSection
+   {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+   }
+   .screenCenter
+   {
+   margin-left: 50px;
+   }
+   .instructorImg_wrapper
+   {
+    padding-bottom: 30px;
+   }
+   .instructorTitle
+   {
+    margin-left: 60px;
+   }
+   .nextBtn{
+    right: 250% !important;
+   }
+   .prevBtn
+   {
+    left: 250% !important;
+   }
+   .carousel-control-next
+   {
+    padding-left: 0px !important;
+   }
+   .carousel-control-prev
+   {
+    padding-right: 0px !important;
+   }
+}
+
+
+/* ///////// Tablet Media Query //////////*/
+@media only screen and (min-width: 769px) and (max-width: 1200px)
+{
+    .herocontent
+    {
+     padding-top: 50px !important;
+    }
+    #BecomeInstructor {
+        padding-top: 60px !important;
+    }
+    .instructorTitle
+    {
+        padding-top: 50px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
